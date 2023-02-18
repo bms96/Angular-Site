@@ -1,0 +1,13 @@
+.todo-div {
+    display: flex;
+    flex-direction: column;
+
+    border: 3px solid black;
+    border-radius: 0.2rem;
+}
+
+.buttons-div {
+    display: flex;
+    gap: 2rem;
+    border: 2px solid green;
+}
