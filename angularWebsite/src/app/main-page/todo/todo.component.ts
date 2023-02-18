@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TodoComponent {
 
-  todos: any = [{"name":"Pete", "age":"32"}, {"name":"ManBearPig", "age":"??"}, {"name":"Bryan", "age":"26"}];
+  todos: any = [{"id":"1","name":"Pete", "age":"32"}, {"id":"2","name":"ManBearPig", "age":"??"}, {"id":"3","name":"Bryan", "age":"26"}];
 
 }
