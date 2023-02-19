@@ -1,10 +1,26 @@
 <div class="todo-div">
     <div class="buttons-div">
-        <button class="create-button" type="button">Create</button>
-        <button class="edit-button">Edit</button>
-        <button class="delete-button" type="button">Delete</button>
+        <button class="create-button" type="button" (click)="createTodo()">Create</button>
+        <!-- <button class="edit-button">Edit</button>
+        <button class="delete-button" type="button">Delete</button> -->
     </div>
     <div class="list-div" *ngFor="let todo of todos">
-        <li class="todo-li"><b>{{todo.id}}.  </b><b>Name:</b> {{todo.name}} <b>Age:</b> {{todo.age}}</li>
+        <li class="todo-li">
+            <div class="todo-description-div">
+                <div class="description">
+                    <p class="number"><b>{{todo.id}}.</b></p>
+                    <p class="todo">
+                        <b>Todo: {{todo.age}}</b>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam nam inventore rem voluptatem perferendis porro in sunt molestias fugiat ratione eligendi vel, itaque, quae quis eveniet. Ab, vel accusantium?
+                    </p>
+                    
+                </div>
+            </div>
+            <!-- <button class="create-button" type="button">Create</button> -->
+            <div class="todo-buttons">
+                <button class="edit-button">Edit</button>
+                <button class="delete-button" type="button" (click)="deleteTodo(todo.id)">Delete</button>
+            </div>
+        </li>
     </div>
 </div>

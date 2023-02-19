@@ -2,18 +2,26 @@
     display: flex;
     flex-direction: column;
 
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 0.2rem;
     padding: 1rem;
 }
 
 .buttons-div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
     border: 1px solid grey;
     border-radius: 0.2rem;
     padding: 0.2rem;
+}
+
+.buttons-div button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    letter-spacing: 0.1rem;
+    background-color: green;
+    color: white;
 }
 
 .list-div {
@@ -22,10 +30,61 @@
 }
 
 .todo-li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     list-style-type: none;
     border: 2px solid grey;
     border-radius: 0.2rem;
-    width: 15rem;
+    width: 25rem;
+    min-width: fit-content;
     padding: 0.1rem;
     margin-top: 0.1rem;
+}
+.todo-description-div {
+    /* border: 2px solid green; */
+    width: 22rem;
+    /* color:red; */
+}
+
+.description {
+    display: flex;
+    padding-left: 1rem;
+    /* border: 2px solid red; */
+    
+}
+
+.number {
+    /* border: 2px solid blue; */
+    padding-right: 0.5rem;
+}
+
+.todo {
+    /* border: 2px solid black; */
+}
+
+.todo-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;;
+    /* border: 2px solid blue; */
+    height: fit-content;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.edit-button {
+    margin-right: 0.2rem;
+    background-color: yellow;
+    
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+}
+
+button, p {
+    border-radius: 0.2rem;
+    font-family: Helvetica;
 }

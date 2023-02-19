@@ -1,5 +1,6 @@
 .container-div {
     display: flex;
     justify-content: center;
-    border: 3px solid black
+    border: 3px solid black;
+    width: auto;
 }
